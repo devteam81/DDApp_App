@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="videoPurchaseDetail"
+            type="com.dd.app.dd.model.VideoPurchase"/>
+        <!--<variable
+            name="adapter"
+            type="com.dd.digitaldistribution.ui.main.videos.VideoAdapter"/>-->
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/videoTileRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            android:layout_margin="@dimen/dp_5"
+            android:src="@color/button_color_light"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:strokeColor="@null"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.SelectedCornerRadius" />
+
+        <!--<androidx.cardview.widget.CardView
+            android:id="@+id/imgCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="@dimen/dp_10"
+            app:cardUseCompatPadding="true">
+
+            <com.skydoves.elasticviews.ElasticImageView
+                android:id="@+id/img_video"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@{videoPurchaseDetail.thumbnail}"
+                tools:src="@tools:sample/backgrounds/scenic" />
+        </androidx.cardview.widget.CardView>-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_alignStart="@+id/image"
+            android:layout_alignEnd="@+id/image"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_5"
+            android:singleLine="true"
+            tools:text="@{videoPurchaseDetail.purchaseId}"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_12"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+</layout>

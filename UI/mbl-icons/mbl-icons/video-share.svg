@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="video-share" transform="translate(19945.053 -2292.25)">
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(-19945.053 2292.25)" fill="none" stroke="#1198ff" stroke-miterlimit="10" stroke-width="2">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="11" fill="none"/>
+    </g>
+    <path id="Path_807" data-name="Path 807" d="M42.932,41.986c-.1-1.351-.344-2.747-2.072-2.849a85.386,85.386,0,0,0-9.72,0c-1.728.1-1.974,1.5-2.072,2.849a27.025,27.025,0,0,0,0,4.036c.1,1.351.344,2.747,2.072,2.849a85.386,85.386,0,0,0,9.72,0c1.728-.1,1.974-1.5,2.072-2.849A27.027,27.027,0,0,0,42.932,41.986Zm-11.481,3.82v-4l3.8,2Z" transform="translate(-19968.66 2260.483)" fill="#1198ff" fill-rule="evenodd"/>
+    <path id="Icon_material-share" data-name="Icon material-share" d="M7.546,5.86a.591.591,0,0,0-.4.156L5.7,5.173a.562.562,0,0,0,0-.284l1.432-.835a.608.608,0,1,0-.195-.445.665.665,0,0,0,.018.142l-1.432.835a.609.609,0,1,0,0,.89l1.446.845a.573.573,0,0,0-.016.132.593.593,0,1,0,.593-.593Z" transform="translate(-19935.816 2299.464)" fill="#202125"/>
+  </g>
+</svg>

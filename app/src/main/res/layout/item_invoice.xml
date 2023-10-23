@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="invoice"
+            type="com.dd.app.dd.model.Invoice"/>
+        <!--<variable
+            name="adapter"
+            type="com.dd.digitaldistribution.ui.main.videos.VideoAdapter"/>-->
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/dp_10"
+        android:weightSum="4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/gray_bg_small">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="@{invoice.result[0].purchaseId}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="@{invoice.createdAt}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="@{@string/currency.concat(invoice.debit)}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="Download\nView"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</layout>

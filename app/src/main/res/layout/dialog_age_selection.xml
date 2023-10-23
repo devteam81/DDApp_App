@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/bg_button"
+    android:backgroundTint="@color/header_footer">
+
+    <LinearLayout
+        android:id="@+id/ll_age_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_16"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/ll_subscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color_light"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="198"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text=" / 12 Months"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/button_color_light"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/txt_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold"
+                    tools:text="Maharashtra" />
+
+                <ImageView
+                    android:id="@+id/img_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:rotation="90"
+                    android:src="@drawable/ic_arrow"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/select_age"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:padding="@dimen/dp_10" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_age"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:scrollbars="vertical"
+                style="@style/scrollbar_shape_style"
+                android:background="@color/button_color_light" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/termsConditionCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:buttonTint="@color/white"
+                android:checked="true"/>
+
+            <TextView
+                android:id="@+id/termsCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:text="@string/terms_and_privacypolicy"
+                android:textSize="@dimen/sp_14"
+                android:layout_toEndOf="@+id/termsConditionCheck"/>
+
+            <TextView
+                android:id="@+id/termsPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:text="@string/terms_privacy_policy"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@+id/termsCondition"
+                android:layout_alignStart="@+id/termsCondition"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/white"
+            android:text="@string/cancel"
+            android:textSize="@dimen/sp_18"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <!--<TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:background="@drawable/bg_button"
+            android:padding="15dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

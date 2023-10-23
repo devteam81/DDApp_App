@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="period"
+            type="com.dd.app.dd.model.Period"/>
+        <!--<variable
+            name="adapter"
+            type="com.dd.digitaldistribution.ui.main.videos.VideoAdapter"/>-->
+    </data>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp_5">
+
+    <!--<TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/sp_12"
+        tools:text="Season 1"
+        android:background="@drawable/bg_season"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"/>-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        tools:text="@{period.title}"
+        android:background="@drawable/graph_border"
+        android:backgroundTint="@color/level_color"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"/>
+
+</RelativeLayout>
+
+</layout>

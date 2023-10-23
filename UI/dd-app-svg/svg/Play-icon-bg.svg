@@ -1,0 +1,6 @@
+<svg id="Play-icon-bg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_41" data-name="Path 41" d="M20.485,3.515A12,12,0,0,0,3.515,20.485,12,12,0,1,0,20.485,3.515Z" transform="translate(0 0)" fill="#fff" opacity="0.41"/>
+  <path id="Path_42" data-name="Path 42" d="M264.416,3.515A11.776,11.776,0,0,0,256,0V24a11.776,11.776,0,0,0,8.416-3.515,12.07,12.07,0,0,0,0-16.971Z" transform="translate(-243.902 0)" fill="#fff" opacity="0.3"/>
+  <path id="Path_43" data-name="Path 43" d="M194.812,118.648l-8.964-6.064a.689.689,0,0,0-.716-.035.709.709,0,0,0-.368.624V125.3a.709.709,0,0,0,.368.624.689.689,0,0,0,.716-.035l8.964-6.063a.713.713,0,0,0,0-1.178Z" transform="translate(-176.049 -107.237)" fill="#fff"/>
+  <path id="Path_44" data-name="Path 44" d="M262.736,151.421,256,146.93v10.142l6.736-4.491a.7.7,0,0,0,0-1.161Z" transform="translate(-243.959 -140.001)" fill="#fff"/>
+</svg>

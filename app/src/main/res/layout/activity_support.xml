@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SupportActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_blue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/app_support"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollSupportPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/query_type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"
+                android:layout_margin="@dimen/dp_10"/>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/ll_query_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:flexWrap="wrap"
+                app:alignItems="stretch"
+                app:alignContent="stretch"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_16"/>
+
+            <!-- Name -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/button_bg_edit_text">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:textColorHint="@color/grey"
+                    app:hintTextColor="@color/button_color_light"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:textColor="@color/grey"
+                    android:background="@color/black"
+                    android:layout_centerVertical="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="@string/text_name"
+                        android:maxLength="50"
+                        tools:text="Harshit"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"
+                        android:background="@null" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <!-- Email -->
+            <RelativeLayout
+                android:id="@+id/rl_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_bg_edit_text">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:textColorHint="@color/grey"
+                    app:hintTextColor="@color/button_color_light"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:textColor="@color/grey"
+                    android:background="@color/black"
+                    android:layout_centerVertical="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        tools:text="Harshit"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"
+                        android:background="@null"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <!-- Phone -->
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_bg_edit_text">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile"
+                    android:textColorHint="@color/grey"
+                    app:hintTextColor="@color/button_color_light"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:textColor="@color/grey"
+                    android:background="@color/black"
+                    android:layout_centerVertical="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="16"
+                        android:nextFocusDown="@id/edt_subject"
+                        tools:text="Harshit"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"
+                        android:background="@null"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <!-- Subject -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_bg_edit_text"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/subject"
+                    android:textColorHint="@color/grey"
+                    app:hintTextColor="@color/button_color_light"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:textColor="@color/grey"
+                    android:background="@color/black"
+                    android:layout_centerVertical="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:maxLength="50"
+                        android:nextFocusDown="@id/edt_comment"
+                        android:singleLine="true"
+                        tools:text="Harshit"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"
+                        android:background="@null"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <!-- Comment -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_bg_edit_text">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/comment"
+                    android:textColorHint="@color/grey"
+                    app:hintTextColor="@color/button_color_light"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:textColor="@color/grey"
+                    android:background="@color/black"
+                    android:layout_centerVertical="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:inputType="textMultiLine"
+                        android:maxLength="500"
+                        tools:text="Harshit"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"
+                        android:background="@null"
+                        android:gravity="top"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/subscribe_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/button_color_light"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

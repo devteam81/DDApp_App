@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".dd.ui.SubscribeDDFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_background" />
+
+            <TextView
+                android:id="@+id/textViewProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                android:text="Please login to see the \nAnalytics" />
+
+            <Button
+                android:id="@+id/subscribe_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/drawable_white_border_rounded_rect"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:layout_below="@+id/textViewProgress"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="coinHistory"
+            type="com.dd.app.dd.model.CoinHistory"/>
+
+    </data>
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null">
+
+        <RelativeLayout
+            android:id="@+id/rl_coin_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_65"
+                android:scaleType="fitXY"
+                android:background="@color/button_gradient_dark"
+                tools:src="@tools:sample/backgrounds/scenic"
+                app:strokeColor="@null"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.SelectedCornerRadius" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@{coinHistory.purchaseId}"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_50"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10"
+                android:background="@drawable/yellow_small"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgRating"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/yellow_coin" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@{String.valueOf(coinHistory.totalCoins)}"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/dp_10" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+
+
+       <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_below="@+id/rl_coin_item"/>-->
+
+    </RelativeLayout>
+</layout>
